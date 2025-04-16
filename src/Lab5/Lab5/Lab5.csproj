@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Lab5.Application\Lab5.Application.csproj" />
+      <ProjectReference Include="..\Infrastructure\Lab5.Infrastucture.DataAccess\Lab5.Infrastucture.DataAccess.csproj" />
+      <ProjectReference Include="..\Presentation\Lab5.Presentation.Console\Lab5.Presentation.Console.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+</Project>

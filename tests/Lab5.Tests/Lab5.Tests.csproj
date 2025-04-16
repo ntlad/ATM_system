@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector"/>
+        <PackageReference Include="Itmo.Dev.Platform.Postgres" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+        <PackageReference Include="Moq" />
+        <PackageReference Include="Npgsql" />
+        <PackageReference Include="Spectre" />
+        <PackageReference Include="Spectre.Console" />
+        <PackageReference Include="xunit"/>
+        <PackageReference Include="xunit.runner.visualstudio"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Lab5\Application\Lab5.Application.Abstractions\Lab5.Application.Abstractions.csproj" />
+      <ProjectReference Include="..\..\src\Lab5\Application\Lab5.Application.Models\Lab5.Application.Models.csproj" />
+      <ProjectReference Include="..\..\src\Lab5\Application\Lab5.Application\Lab5.Application.csproj" />
+      <ProjectReference Include="..\..\src\Lab5\Infrastructure\Lab5.Infrastucture.DataAccess\Lab5.Infrastucture.DataAccess.csproj" />
+    </ItemGroup>
+
+</Project>
