@@ -27,8 +27,7 @@ Implementation of ATM system
 - if there is a sufficient balance, check that the account is saved with a correctly updated balance
 - if there is an insufficient balance, the service should return an error
 - replenishing an account
-- check that the account is saved with a correctly updated balance
-
+- check that the account is saved with a correctly updated balance \
 These tests check the business logic, they do not depend on the database or console
 representation. \
 The tests use mock repositories.
